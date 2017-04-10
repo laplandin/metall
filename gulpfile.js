@@ -102,7 +102,12 @@ gulp.task('vendor',function() {
     .pipe(gulp.dest(path.dist.dev.fonts));
 });
 
-gulp.task('build-dev', ['html', 'styles', 'scripts', 'vendor']);
+gulp.task('fonts', function() {
+  gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.dist.dev.fonts));
+});
+
+gulp.task('build-dev', ['html', 'styles', 'scripts', 'vendor', 'fonts']);
 
 gulp.task('serve', ['build-dev', 'watch'], function() {
   browserSync(config);
