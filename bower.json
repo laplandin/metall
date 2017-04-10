@@ -1,0 +1,23 @@
+{
+  "name": "angular-builder",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Laplandin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "bootstrap-css-only": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
