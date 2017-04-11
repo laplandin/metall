@@ -43,7 +43,7 @@ var path = {
   watch: {    //За изменениями каких файлов мы хотим наблюдать
     html: 'src/**/*.html',
     scripts: 'src/app/**/*.js',
-    styles: 'src/content/styles/**/*.less',
+    styles: 'src/styles/**/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
@@ -107,7 +107,12 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(path.dist.dev.fonts));
 });
 
-gulp.task('build-dev', ['html', 'styles', 'scripts', 'vendor', 'fonts']);
+gulp.task('img', function() {
+  gulp.src(path.src.img)
+    .pipe(gulp.dest(path.dist.dev.img));
+});
+
+gulp.task('build-dev', ['html', 'styles', 'scripts', 'vendor', 'fonts', 'img']);
 
 gulp.task('serve', ['build-dev', 'watch'], function() {
   browserSync(config);

@@ -1,11 +1,46 @@
 .page-nav {
-
+  background-color: @secondary;
 }
 
 .page-nav__logo {
+  margin: 0;
+  color: @primary;
   .font(@assuan, 46px, 145px, 400);
 }
 
-.page-nav__link {
+.page-nav__list {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+}
 
+.page-nav__item {
+  display: inline-block;
+}
+
+.page-nav__link {
+  padding-bottom: 9px;
+
+  text-transform: uppercase;
+  color: @primary;
+  margin-left: 61px;
+  .font(@akrobat, 24px, 145px, 400);
+
+  &:hover {
+    color: @primary;
+    text-decoration: none;
+    border-bottom: 3px solid @white;
+  }
+}
+
+.page-nav__phone {
+  color: @primary;
+  text-decoration: none;
+  margin-left: 60px;
+  .font(@assuan, 38px, 145px, 400);
+
+  &:hover {
+    text-decoration: none;
+    color: @primary;
+  }
 }
