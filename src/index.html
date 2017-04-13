@@ -154,9 +154,21 @@
         <div class="row">
           <div class="table">
             <div class="table-header-group">
-              <div class="table-cell">Вид лома</div>
-              <div class="table-cell">Состав лома</div>
-              <div class="table-cell">Цена, руб/тн</div>
+              <div class="table-cell">
+                <div class="table-left-wrap">
+                  <span>Вид лома</span>
+                </div>
+              </div>
+              <div class="table-cell table-cell--central">
+                <div class="central-cell">
+                  Состав лома
+                </div>
+              </div>
+              <div class="table-cell">
+                <div class="table-right-wrap">
+                  <span>Цена, руб/тн</span>
+                </div>
+              </div>
             </div>
             <div class="table-row">
               <div class="table-cell">
@@ -245,6 +257,77 @@
               <div class="table-cell">
                 <div class="table-right-wrap">
                   <span>10 400</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculate section section--red">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <form action="" class="calculate__form">
+              <h4 class="calculate__form-title">Рассчет суммы</h4>
+              <label for="">Какого типа у вас лом?</label>
+                <select name="" id="">
+                  <option value="">Алюминий</option>
+                  <option value="">Медь</option>
+                  <option value="">Арматура</option>
+                  <option value="">Стальной лом</option>
+                  <option value="">Свинец, аккумуляторы</option>
+                  <option value="">Черный металл</option>
+                </select>
+              <label for="">Сколько у вас лома (кг)?</label>
+              <input class="calculate__input" type="number">
+              <input id="checkbox-dismating" type="checkbox" name="service-type">
+              <label for="checkbox-dismating">Нужен демонтаж</label>
+              <br>
+              <input id="checkbox-removal" type="checkbox" name="service-type">
+              <label for="checkbox-removal">Нужен вывоз</label>
+              <label for="">Ваш контакт</label>
+              <input name="phone" type="text">
+              <input type="submit" value="Рассчитать">
+            </form>
+          </div>
+          <div class="col-md-6 col-md-offset-2">
+            <h3 class="calculate__title">Определите вид <br> вашего лома</h3>
+            <div class="calculate__thumbnails-list">
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb1.jpg" alt="Алюминий">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title">Алюминий</h4>
+                </div>
+              </div>
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb2.jpg" alt="Медь">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title">Медь</h4>
+                </div>
+              </div>
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb3.jpg" alt="Арматура">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title">Арматура</h4>
+                </div>
+              </div>
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb4.jpg" alt="Стальной лом">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title">Стальной лом</h4>
+                </div>
+              </div>
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb5.jpg" alt="Свинец, аккумуляторы">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title calculate__thumb-title--wide">Свинец, <br>аккумуляторы</h4>
+                </div>
+              </div>
+              <div class="calculate__thumbnails-item">
+                <img src="img/thumb6.jpg" alt="Черный металл">
+                <div class="calculate__title-wrapper">
+                  <h4 class="calculate__thumb-title">Черный<br> металл</h4>
                 </div>
               </div>
             </div>
