@@ -337,25 +337,37 @@
     </section>
     <section class="order">
       <div class="container">
-        <form action="" class="col-md-6 order__form">
-          <h3 class="order__title">Оставьте заявку</h3>
-          <input type="text" class="order__form-input order__form-input--name" placeholder="Имя">
-          <input type="text" class="order__form-input order__form-input--phone" placeholder="Телефон">
-          <input type="text" class="order__form-input order__form-input--mail" placeholder="E-mail">
-          <input type="submit" value="Заказать вызов">
-        </form>
+        <div class="row">
+          <form action="" class="col-md-6 order__form">
+            <h3 class="order__title">Оставьте заявку</h3>
+            <div class="order__input-wrapper order__input-wrapper--user">
+              <input type="text" class="order__form-input order__form-input--name" placeholder="Имя">
+            </div>
+            <div class="order__input-wrapper order__input-wrapper--phone">
+              <input type="text" class="order__form-input" placeholder="Телефон">
+            </div>
+            <div class="order__input-wrapper order__input-wrapper--mail">
+              <input type="text" class="order__form-input order__form-input--mail" placeholder="E-mail">
+            </div>
+            <input class="btn-submit" type="submit" value="Заказать вызов">
+          </form>
+        </div>
       </div>
     </section>
-    <section id="map"></section>
+    <section class="container-fluid">
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </section>
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p class="logo">МеталлГрад</p>
+          <div class="col-md-5">
+            <p class="page-footer__logo">МеталлГрад</p>
           </div>
-          <div class="col-md-6">
-            <a href="tel:+79085076874">8 (908) 507 68 74</a>
-            <p>
+          <div class="col-md-offset-2 col-md-5">
+            <a class="pagge-footer__phone" href="tel:+79085076874">+7 908 507 68 74</a>
+            <p class="pagge-footer__address">
               г. Новочеркасск, Харьковское шоссе 32 б
             </p>
           </div>
