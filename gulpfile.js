@@ -42,7 +42,7 @@ var path = {
   },
   watch: {    //За изменениями каких файлов мы хотим наблюдать
     html: 'src/**/*.html',
-    scripts: 'src/app/**/*.js',
+    scripts: 'src/**/*.js',
     styles: 'src/styles/**/*.less',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
@@ -127,6 +127,9 @@ gulp.task('watch', function() {
   });
   watch([path.watch.scripts], function() {
     gulp.start('scripts');
+  });
+  watch([path.watch.img], function() {
+    gulp.start('img');
   });
 });
 

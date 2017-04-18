@@ -15,13 +15,13 @@
             <h1 class="page-nav__logo">МеталлГрад</h1>
           </li>
           <li class="page-nav__item">
-            <a href="" class="page-nav__link">Наши сервисы</a>
+            <a href="#services" class="page-nav__link js-scroll">Наши сервисы</a>
           </li>
           <li class="page-nav__item">
-            <a href="" class="page-nav__link">О компании</a>
+            <a href="#about" class="page-nav__link js-scroll">О компании</a>
           </li>
           <li class="page-nav__item">
-            <a href="" class="page-nav__link">Контакты</a>
+            <a href="#contacts" class="page-nav__link js-scroll">Контакты</a>
           </li>
           <li class="page-nav__item">
             <a href="tel:+79085076874" class="page-nav__phone">+7 908 507 68 74</a>
@@ -29,19 +29,50 @@
         </ul>
       </nav>
     </header>
-    <div class="page-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-8 page-banner__promo-wrapper">
-            <p class="page-banner__promo">Честное взвешивание</p>
+    <div class="slider">
+      <div class="slide-left"></div>
+      <div class="slide-right"></div>
+      <div class="slide-wrapper">
+        <div class="page-banner slide1">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-8 page-banner__promo-wrapper">
+                <p class="page-banner__promo">Честное взвешивание</p>
+              </div>
+            </div>
+            <div class="row">
+              <a href="#order" class="js-scroll col-xs-5 page-banner__give-order">Заказать вывоз</a>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <a href="" class="col-xs-5 page-banner__give-order">Заказать вывоз</a>
+        <div class="page-banner slide2">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-8 page-banner__promo-wrapper">
+                <p class="page-banner__promo">Высокие цены</p>
+              </div>
+            </div>
+            <div class="row">
+              <a href="#order" class="js-scroll col-xs-5 page-banner__give-order">Заказать вывоз</a>
+            </div>
+          </div>
+        </div>
+        <div class="page-banner slide3">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-9 page-banner__promo-wrapper">
+                <p class="page-banner__promo">Собственный склад и площадка</p>
+              </div>
+            </div>
+            <div class="row">
+              <a href="#order" class="js-scroll col-xs-5 page-banner__give-order">Заказать вывоз</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <section class="about section">
+      <a name="about"></a>
       <div class="container-fluid">
         <h2 class="section-title about__title">О нас</h2>
         <div class="col-xs-7 col-xs-offset-1">
@@ -83,6 +114,7 @@
       </div>
     </section>
     <section class="service section section--red">
+      <a name="services"></a>
       <div class="container">
         <h2 class="features__title section-title section-title--contrast">Наши услуги</h2>
         <div class="service__list row">
@@ -336,6 +368,7 @@
       </div>
     </section>
     <section class="order">
+      <a name="order"></a>
       <div class="container">
         <div class="row">
           <form action="" class="col-xs-6 order__form">
@@ -349,12 +382,13 @@
             <div class="order__input-wrapper order__input-wrapper--mail">
               <input type="text" class="order__form-input order__form-input--mail" placeholder="E-mail">
             </div>
-            <input class="btn-submit" type="submit" value="Заказать вызов">
+            <input class="btn-submit" type="submit" value="Заказать вывоз">
           </form>
         </div>
       </div>
     </section>
     <section class="container-fluid">
+      <a name="contacts"></a>
       <div class="row">
         <div id="map"></div>
       </div>

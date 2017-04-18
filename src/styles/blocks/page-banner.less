@@ -1,9 +1,78 @@
+.slider {
+  overflow: hidden;
+  min-width: 100vw;
+
+  .slide-left {
+    display: block;
+    width: 48px;
+    height: 84px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    background-image: url('../img/control-left.png');
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .slide-right {
+    display: block;
+    width: 48px;
+    height: 84px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    background-image: url('../img/control-right.png');
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .slide-wrapper {
+    width: calc(100vw*3);
+    font-size: 0;
+    transition: all 0.3s ease;
+  }
+
+  .slide1,
+  .slide2,
+  .slide3 {
+    width: 100vw;
+    min-height: 962px;
+    display: inline-block;
+
+
+  }
+
+  .slide2,
+  .slide3,
+  .slide-left,
+  .slide-right {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
 .page-banner {
   min-width: 1180px;
   padding: 161px 0 200px;
 
-  background: url('../img/banner.jpg') no-repeat center center;
-  background-size: cover;
+  &.slide1 {
+    background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.slide2 {
+    background: url('../img/banner3.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &.slide3 {
+    background: url('../img/banner4.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
 }
 
 .page-banner__promo-wrapper {
