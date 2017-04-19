@@ -23,48 +23,59 @@
   }
 
 
-  var vWidth = $(window).width() + getScrollWidth();
-  var offset = 0;
-  var count = 0;
-
-  $('.slide-left').on('click', function() {
-    offset += vWidth;
-
-    count -= 1;
-
-    if (count < 0) {
-      offset = -2*vWidth;
-      count = 2;
-
-      $('.slide-wrapper').css({
-        'transform': 'translate(' + offset + 'px, 0)'
-      });
-      return;
-    }
-
-    $('.slide-wrapper').css({
-      'transform': 'translate(' + offset + 'px, 0)'
+    $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      nextArrow: '<a class="slide-right"></a>',
+      prevArrow: '<a class="slide-left"></a>',
     });
 
 
-  });
-
-  $('.slide-right').on('click', function() {
-    offset -= vWidth;
-    count += 1;
-    if (count > 2) {
-      offset = 0;
-      count = 0;
-
-      $('.slide-wrapper').css({
-        'transform': 'translate(' + offset + 'px, 0)'
-      });
-      return;
-    }
-
-
-    $('.slide-wrapper').css({
-      'transform': 'translate(' + offset + 'px, 0)'
-    });
-  });
+  // var vWidth = $(window).width() + getScrollWidth();
+  // var offset = 0;
+  // var count = 0;
+  //
+  // $('.slide-left').on('click', function() {
+  //   offset += vWidth;
+  //
+  //   count -= 1;
+  //
+  //   if (count < 0) {
+  //     offset = -2*vWidth;
+  //     count = 2;
+  //
+  //     $('.slide-wrapper').css({
+  //       'transform': 'translate(' + offset + 'px, 0)'
+  //     });
+  //     return;
+  //   }
+  //
+  //   $('.slide-wrapper').css({
+  //     'transform': 'translate(' + offset + 'px, 0)'
+  //   });
+  //
+  //
+  // });
+  //
+  // $('.slide-right').on('click', function() {
+  //   offset -= vWidth;
+  //   count += 1;
+  //   if (count > 2) {
+  //     offset = 0;
+  //     count = 0;
+  //
+  //     $('.slide-wrapper').css({
+  //       'transform': 'translate(' + offset + 'px, 0)'
+  //     });
+  //     return;
+  //   }
+  //
+  //
+  //   $('.slide-wrapper').css({
+  //     'transform': 'translate(' + offset + 'px, 0)'
+  //   });
+  // });
 }());
